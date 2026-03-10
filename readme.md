@@ -3,7 +3,7 @@
 ## Om projektet
 
 Dette projekt er lavet som en del af Tema 8.
-Vi har lavet et dynamisk website med HTML, CSS og JavaScript, hvor indholdet bliver hentet fra et API.
+Vi har lavet et dynamisk website med HTML, CSS og JavaScript, hvor indholdet bliver hentet fra et Rest API.
 
 Sitet består af flere sider, hvor brugeren kan:
 
@@ -63,20 +63,20 @@ Her bliver indhold vist dynamisk, fx links eller kategorier.
 
 ### recipelist.js
 
-Henter data fra API'et og viser en liste med opskrifter på siden.
+Henter data fra Rest API'et og viser en liste med opskrifter på siden.
 
 **Flow:**
 
 1. Siden loader
 2. JavaScript kører
-3. Data hentes fra API
+3. Data hentes fra Rest API
 4. Data bliver gennemgået med loop
 5. HTML bliver indsat i DOM'en
 6. Brugeren kan klikke på en opskrift
 
 ### recipedetails.js
 
-Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter den rigtige opskrift fra API'et.
+Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter den rigtige opskrift fra Rest API'et.
 
 Det gør det muligt at genbruge den samme HTML-side til mange opskrifter. I stedet for at lave én side per opskrift, bruger vi ét id i URL'en til at vise det rigtige indhold.
 
@@ -121,7 +121,7 @@ Fx ved funktioner, fetch-kald og steder hvor der sker DOM-manipulation.
 **Eksempel:**
 
 ```javascript
-// Henter opskrifter fra API'et
+// Henter opskrifter fra Rest API'et
 async function fetchRecipes() {
   const res = await fetch(apiURL);
   const data = await res.json();
@@ -219,7 +219,7 @@ Et lettere website kræver færre ressourcer at loade og bruge.
 
 ## Udfordringer undervejs
 
-En af vores udfordringer var at få data fra API’et vist korrekt på siderne.
+En af vores udfordringer var at få data fra Rest API’et vist korrekt på siderne.
 Det var også lidt svært at få id med videre i URL’en til detaljesiden.
 
 **Løsninger:**
@@ -228,13 +228,6 @@ Det var også lidt svært at få id med videre i URL’en til detaljesiden.
 - Teste fetch-kald separat
 - Bruge URLSearchParams
 - Dele opgaverne mere tydeligt i gruppen
-
----
-
-## Konklusion
-
-Vi har lavet et dynamisk website, hvor indhold bliver hentet fra et API og vist på flere sider.
-Projektet har givet os erfaring med JavaScript, fetch, DOM-manipulation, formularer og samarbejde i GitHub.
 
 ---
 
