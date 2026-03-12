@@ -183,16 +183,18 @@ Vi har brugt GitHub til at samarbejde om projektet.
 
 Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme tid.
 
+Vi navngav branchene med feature først og navnet på den, der lavede branchen til sidst.
+
 ### Eksempler på branches
 
-- `feature-forside`
-- `feature-opskriftsliste`
-- `feature-detaljeside`
-- `feature-formular`
+- `feature-forside-steen`
+- `feature-opskriftsliste-peter`
+- `feature-detaljeside-karsten`
+- `feature-formular-pia`
 
 ### Workflow
 
-1. Lave en branch
+1. Lave en branch med feature-navn og eget navn til sidst
 2. Kode en feature
 3. Committe ændringer
 4. Pushe til GitHub
